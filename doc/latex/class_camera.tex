@@ -1,0 +1,156 @@
+\hypertarget{class_camera}{}\doxysection{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+Stores information about where to display objects on the screen  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_a4cc661022f19e481fabdf02dc46c0e02}{Camera}} (int width, int height, glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_camera}{Camera}} constructor to set up initial values \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_af2f7d8094afc9fe8fc2a74deb7088909}{update\+Matrix}} (float FOVdeg, float near\+Plane, float far\+Plane)
+\begin{DoxyCompactList}\small\item\em Updates the camera matrix to the \mbox{\hyperlink{struct_vertex}{Vertex}} \mbox{\hyperlink{class_shader}{Shader}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a9031a300b6c8e18ebb945227b6e6d50a}{matrix}} (\mbox{\hyperlink{class_shader}{Shader}} \&shader, const char $\ast$uniform)
+\begin{DoxyCompactList}\small\item\em Exports the camera matrix to a shader \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a3553a24b2f7fd5ed3cca061f1a24cd2f}{inputs}} (GLFWwindow $\ast$window)
+\begin{DoxyCompactList}\small\item\em Handles camera inputs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a3220778084ac86bc224667362464dd4d}{set\+Screen\+Size}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Changing the size of the window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_a04b5db2c530d8630660e8cfb93a4b3b5}\label{class_camera_a04b5db2c530d8630660e8cfb93a4b3b5}} 
+glm\+::vec3 {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_camera_a1be00c1e1049e3f682094be8d85060a8}\label{class_camera_a1be00c1e1049e3f682094be8d85060a8}} 
+glm\+::vec3 {\bfseries orientation}
+\item 
+\mbox{\Hypertarget{class_camera_a3fe5f351380fb118ffc600591769f049}\label{class_camera_a3fe5f351380fb118ffc600591769f049}} 
+glm\+::vec3 {\bfseries up}
+\item 
+\mbox{\Hypertarget{class_camera_ab64c758c9bfd88201598e8f77cb380eb}\label{class_camera_ab64c758c9bfd88201598e8f77cb380eb}} 
+glm\+::mat4 {\bfseries camera\+Matrix}
+\item 
+\mbox{\Hypertarget{class_camera_a9ab381eac17a629e3451328622c6c5a9}\label{class_camera_a9ab381eac17a629e3451328622c6c5a9}} 
+bool {\bfseries first\+Click}
+\item 
+\mbox{\Hypertarget{class_camera_a7f3890bf4c4bd76790569c1c42014e32}\label{class_camera_a7f3890bf4c4bd76790569c1c42014e32}} 
+int {\bfseries width}
+\item 
+\mbox{\Hypertarget{class_camera_a71d4b6a3a1bcd937a9f147a3e35a8fed}\label{class_camera_a71d4b6a3a1bcd937a9f147a3e35a8fed}} 
+int {\bfseries height}
+\item 
+\mbox{\Hypertarget{class_camera_a2960f533df18fe6d7d574c316c6d217a}\label{class_camera_a2960f533df18fe6d7d574c316c6d217a}} 
+float {\bfseries speed}
+\item 
+\mbox{\Hypertarget{class_camera_a5431c8caefafb42a667ca4c801bef07f}\label{class_camera_a5431c8caefafb42a667ca4c801bef07f}} 
+float {\bfseries sensitivity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores information about where to display objects on the screen 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_a4cc661022f19e481fabdf02dc46c0e02}\label{class_camera_a4cc661022f19e481fabdf02dc46c0e02}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_camera}{Camera}} constructor to set up initial values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & width of the window\\
+\hline
+{\em height} & height of the window\\
+\hline
+{\em position} & position of the camera in world\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_a3553a24b2f7fd5ed3cca061f1a24cd2f}\label{class_camera_a3553a24b2f7fd5ed3cca061f1a24cd2f}} 
+\index{Camera@{Camera}!inputs@{inputs}}
+\index{inputs@{inputs}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{inputs()}{inputs()}}
+{\footnotesize\ttfamily void Camera\+::inputs (\begin{DoxyParamCaption}\item[{GLFWwindow $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Handles camera inputs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & window object in which we are handling mouse inputs\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a9031a300b6c8e18ebb945227b6e6d50a}\label{class_camera_a9031a300b6c8e18ebb945227b6e6d50a}} 
+\index{Camera@{Camera}!matrix@{matrix}}
+\index{matrix@{matrix}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{matrix()}{matrix()}}
+{\footnotesize\ttfamily void Camera\+::matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{uniform }\end{DoxyParamCaption})}
+
+
+
+Exports the camera matrix to a shader 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & shader object\\
+\hline
+{\em uniform} & name of the uniform in shader\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a3220778084ac86bc224667362464dd4d}\label{class_camera_a3220778084ac86bc224667362464dd4d}} 
+\index{Camera@{Camera}!setScreenSize@{setScreenSize}}
+\index{setScreenSize@{setScreenSize}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setScreenSize()}{setScreenSize()}}
+{\footnotesize\ttfamily void Camera\+::set\+Screen\+Size (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Changing the size of the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & new width of the window\\
+\hline
+{\em height} & new height of the window\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_af2f7d8094afc9fe8fc2a74deb7088909}\label{class_camera_af2f7d8094afc9fe8fc2a74deb7088909}} 
+\index{Camera@{Camera}!updateMatrix@{updateMatrix}}
+\index{updateMatrix@{updateMatrix}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{updateMatrix()}{updateMatrix()}}
+{\footnotesize\ttfamily void Camera\+::update\+Matrix (\begin{DoxyParamCaption}\item[{float}]{FOVdeg,  }\item[{float}]{near\+Plane,  }\item[{float}]{far\+Plane }\end{DoxyParamCaption})}
+
+
+
+Updates the camera matrix to the \mbox{\hyperlink{struct_vertex}{Vertex}} \mbox{\hyperlink{class_shader}{Shader}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em FOVdeg} & field of view degree\\
+\hline
+{\em near\+Plane} & near render distance\\
+\hline
+{\em far\+Plane} & far render distance\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Camera.\+h\item 
+Camera.\+cpp\end{DoxyCompactItemize}

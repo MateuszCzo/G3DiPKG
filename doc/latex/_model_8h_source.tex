@@ -1,0 +1,64 @@
+\hypertarget{_model_8h_source}{}\doxysection{Model.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MODEL\_CLASS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MODEL\_CLASS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<json/json.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include"{}Mesh.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_model}{Model}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_model_a647cff32e29e24f165b4346a97354cc8}{Model}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* file);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a4645104236c91f3858b0c5b502feb982}{draw}}(\mbox{\hyperlink{class_shader}{Shader}}\& shader, \mbox{\hyperlink{class_camera}{Camera}}\& camera);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a61a99350f6f5d2dd09ed7f48d775a0ad}{newPosition}}(glm::vec3 position);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a790c4887839798ac2a4e912954a58705}{newOrientation}}(\textcolor{keywordtype}{int} degres, glm::vec3 a);}
+\DoxyCodeLine{38 \textcolor{keyword}{private}:}
+\DoxyCodeLine{39     \textcolor{comment}{// Variables for easy access}}
+\DoxyCodeLine{40     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* file;}
+\DoxyCodeLine{41     std::vector<unsigned char> data;}
+\DoxyCodeLine{42     json JSON;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{comment}{// All the meshes and transformations}}
+\DoxyCodeLine{45     std::vector<Mesh> meshes;}
+\DoxyCodeLine{46     std::vector<glm::vec3> translationsMeshes;}
+\DoxyCodeLine{47     std::vector<glm::quat> rotationsMeshes;}
+\DoxyCodeLine{48     std::vector<glm::vec3> scalesMeshes;}
+\DoxyCodeLine{49     std::vector<glm::mat4> matricesMeshes;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{// Prevents textures from being loaded twice}}
+\DoxyCodeLine{52     std::vector<std::string> loadedTexName;}
+\DoxyCodeLine{53     std::vector<Texture> loadedTex;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} loadMesh(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} indMesh);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} traverseNode(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} nextNode, glm::mat4 matrix = glm::mat4(1.0f));}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{73     std::vector<unsigned char> getData();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{80     std::vector<float> getFloats(json accessor);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{87     std::vector<GLuint> getIndices(json accessor);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{93     std::vector<Texture> getTextures();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{102     std::vector<Vertex> assembleVertices}
+\DoxyCodeLine{103     (}
+\DoxyCodeLine{104         std::vector<glm::vec3> positions,}
+\DoxyCodeLine{105         std::vector<glm::vec3> normals,}
+\DoxyCodeLine{106         std::vector<glm::vec2> texUVs}
+\DoxyCodeLine{107     );}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{114     std::vector<glm::vec2> groupFloatsVec2(std::vector<float> floatVec);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{121     std::vector<glm::vec3> groupFloatsVec3(std::vector<float> floatVec);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{128     std::vector<glm::vec4> groupFloatsVec4(std::vector<float> floatVec);}
+\DoxyCodeLine{129 \};}
+\DoxyCodeLine{130 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

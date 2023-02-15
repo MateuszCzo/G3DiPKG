@@ -1,0 +1,36 @@
+\hypertarget{_v_b_o_8h_source}{}\doxysection{VBO.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef VBO\_CLASS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define VBO\_CLASS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<glm/glm.hpp>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<glad/glad.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{12 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_vertex}{Vertex}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     glm::vec3 position;}
+\DoxyCodeLine{15     glm::vec3 normal;}
+\DoxyCodeLine{16     glm::vec3 color;}
+\DoxyCodeLine{17     glm::vec2 texUV;}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_v_b_o}{VBO}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \textcolor{comment}{// Reference ID of the Vertex Buffer Object}}
+\DoxyCodeLine{27     GLuint id;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33     \mbox{\hyperlink{class_v_b_o_af8b63b52a126cbc9141e55d0cd45f3cc}{VBO}}(std::vector<Vertex>\& vertices);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_v_b_o_a63c913f623e45e6e7c03506a6705ea21}{bind}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_v_b_o_aad7aac5eb2e2d7d397b7f38bb33d3370}{unbind}}();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_v_b_o_a04d22c7b08f60d6284b33fdd336263dd}{deleteVBO}}();}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

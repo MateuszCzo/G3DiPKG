@@ -1,0 +1,43 @@
+\hypertarget{_camera_8h_source}{}\doxysection{Camera.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CAMERA\_CLASS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CAMERA\_CLASS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<glad/glad.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<GLFW/glfw3.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<glm/glm.hpp>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include<glm/gtc/matrix\_transform.hpp>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include<glm/gtc/type\_ptr.hpp>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include<glm/gtx/rotate\_vector.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include<glm/gtx/vector\_angle.hpp>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include"{}Shader.h"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_camera}{Camera}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \textcolor{comment}{// Stores the main vectors of the camera}}
+\DoxyCodeLine{21     glm::vec3 position;}
+\DoxyCodeLine{22     glm::vec3 orientation;}
+\DoxyCodeLine{23     glm::vec3 up;}
+\DoxyCodeLine{24     glm::mat4 cameraMatrix;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{bool} firstClick;}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} width;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} height;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{float} speed;}
+\DoxyCodeLine{29     \textcolor{keywordtype}{float} sensitivity;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{37     \mbox{\hyperlink{class_camera_a4cc661022f19e481fabdf02dc46c0e02}{Camera}}(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height, glm::vec3 position);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_camera_af2f7d8094afc9fe8fc2a74deb7088909}{updateMatrix}}(\textcolor{keywordtype}{float} FOVdeg, \textcolor{keywordtype}{float} nearPlane, \textcolor{keywordtype}{float} farPlane);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_camera_a9031a300b6c8e18ebb945227b6e6d50a}{matrix}}(\mbox{\hyperlink{class_shader}{Shader}}\& shader, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* uniform);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_camera_a3553a24b2f7fd5ed3cca061f1a24cd2f}{inputs}}(GLFWwindow* window);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_camera_a3220778084ac86bc224667362464dd4d}{setScreenSize}}(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height);}
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,38 @@
+\hypertarget{_mesh_8h_source}{}\doxysection{Mesh.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MESH\_CLASS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MESH\_CLASS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include"{}VAO.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}EBO.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include"{}Camera.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include"{}Texture.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_mesh}{Mesh}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     std::vector <Vertex> vertices;}
+\DoxyCodeLine{19     std::vector <GLuint> indices;}
+\DoxyCodeLine{20     std::vector <Texture> textures;}
+\DoxyCodeLine{21     \textcolor{comment}{// Store VAO in public so it can be used in the Draw function}}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_v_a_o}{VAO}} vao;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{30     \mbox{\hyperlink{class_mesh_a3a7b7bb4a172a517e86e197b267f324d}{Mesh}}(std::vector <Vertex>\& vertices, std::vector <GLuint>\& indices, std::vector <Texture>\& textures);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_mesh_ad6d9c2e4c549cfe46d5d9b6da2c8e377}{draw}}}
+\DoxyCodeLine{42     (}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_shader}{Shader}}\& shader,}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_camera}{Camera}}\& camera,}
+\DoxyCodeLine{45         glm::mat4 matrix = glm::mat4(1.0f),}
+\DoxyCodeLine{46         glm::vec3 translation = glm::vec3(0.0f, 0.0f, 0.0f),}
+\DoxyCodeLine{47         glm::quat rotation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f),}
+\DoxyCodeLine{48         glm::vec3 scale = glm::vec3(1.0f, 1.0f, 1.0f)}
+\DoxyCodeLine{49     );}
+\DoxyCodeLine{50 \};}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

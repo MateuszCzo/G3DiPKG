@@ -1,0 +1,36 @@
+\hypertarget{_main_8h_source}{}\doxysection{Main.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MAIN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MAIN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Mesh.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Array.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Model.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{comment}{// window size}}
+\DoxyCodeLine{10 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} SCR\_WIDTH = 1000;}
+\DoxyCodeLine{11 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} SCR\_HEIGHT = 1000;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{comment}{// Light}}
+\DoxyCodeLine{14 glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);}
+\DoxyCodeLine{15 glm::vec3 lightPos = glm::vec3(10.0f, 20.0f, 5.5f);}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// camera object}}
+\DoxyCodeLine{18 \mbox{\hyperlink{class_camera}{Camera}} camera(SCR\_WIDTH, SCR\_HEIGHT, glm::vec3(10.0f, 20.0f, 20.0f));}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{using }json = nlohmann::json;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{30 \textcolor{keywordtype}{void} framebuffer\_size\_callback(GLFWwindow* window, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{37 \textcolor{keywordtype}{void} setShips(\mbox{\hyperlink{class_array}{Array}}* arrayC);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{44 \textcolor{keywordtype}{void} shootP(\mbox{\hyperlink{class_array}{Array}}* arrayP);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{54 \textcolor{keywordtype}{bool} restartWindow(GLFWwindow* window, \mbox{\hyperlink{class_shader}{Shader}} shader, \textcolor{keywordtype}{int} whoWin);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !MAIN\_H}}
+
+\end{DoxyCode}

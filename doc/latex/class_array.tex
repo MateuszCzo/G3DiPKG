@@ -1,0 +1,129 @@
+\hypertarget{class_array}{}\doxysection{Array Class Reference}
+\label{class_array}\index{Array@{Array}}
+
+
+stores information about a player\textquotesingle{}s board  
+
+
+
+
+{\ttfamily \#include $<$Array.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_array_ae20b3dbb4aa6083679c0dea835abd861}{Array}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_array_a9f459f9474d39f0895b87fa25bf94a18}{shoot}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Shoots at the given place \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_field}{Field}} \mbox{\hyperlink{class_array_a7918c5f7b8edc354a0ab427b3ca5ef5b}{get\+Field\+Info}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Retrieving field data from the given place \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_array_ae58d50db4fade6ae7e6b8ebd3a7a1579}{set\+Ship}} (int x, int y, int orientation, int length)
+\begin{DoxyCompactList}\small\item\em Putting the ship on the board \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_array_a17cebdb06dd67e357a52583fe7106a8c}{if\+Lose}} ()
+\begin{DoxyCompactList}\small\item\em Checking if the player has lost \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_array_a2b8e7a451385f21cd4032b07a82e7804}\label{class_array_a2b8e7a451385f21cd4032b07a82e7804}} 
+void {\bfseries reset} ()
+\begin{DoxyCompactList}\small\item\em Resets the player board \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+stores information about a player\textquotesingle{}s board 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_array_ae20b3dbb4aa6083679c0dea835abd861}\label{class_array_ae20b3dbb4aa6083679c0dea835abd861}} 
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{Array()}{Array()}}
+{\footnotesize\ttfamily Array\+::\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+initializes arrays 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_array_a7918c5f7b8edc354a0ab427b3ca5ef5b}\label{class_array_a7918c5f7b8edc354a0ab427b3ca5ef5b}} 
+\index{Array@{Array}!getFieldInfo@{getFieldInfo}}
+\index{getFieldInfo@{getFieldInfo}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{getFieldInfo()}{getFieldInfo()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_field}{Field}} Array\+::get\+Field\+Info (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Retrieving field data from the given place 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & column number\\
+\hline
+{\em y} & row number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_field}{Field}} structure that contains information whether there is a ship and whether the field has been shot
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_array_a17cebdb06dd67e357a52583fe7106a8c}\label{class_array_a17cebdb06dd67e357a52583fe7106a8c}} 
+\index{Array@{Array}!ifLose@{ifLose}}
+\index{ifLose@{ifLose}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{ifLose()}{ifLose()}}
+{\footnotesize\ttfamily bool Array\+::if\+Lose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checking if the player has lost 
+
+\begin{DoxyReturn}{Returns}
+true if the player has lost
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_array_ae58d50db4fade6ae7e6b8ebd3a7a1579}\label{class_array_ae58d50db4fade6ae7e6b8ebd3a7a1579}} 
+\index{Array@{Array}!setShip@{setShip}}
+\index{setShip@{setShip}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{setShip()}{setShip()}}
+{\footnotesize\ttfamily bool Array\+::set\+Ship (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{orientation,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Putting the ship on the board 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & column number\\
+\hline
+{\em y} & row number\\
+\hline
+{\em orientation} & orientation of the ship\\
+\hline
+{\em length} & ship length\\
+\hline
+\end{DoxyParams}
+orientation must be from 0 to 3 \begin{DoxyReturn}{Returns}
+true if the ship has been placed
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_array_a9f459f9474d39f0895b87fa25bf94a18}\label{class_array_a9f459f9474d39f0895b87fa25bf94a18}} 
+\index{Array@{Array}!shoot@{shoot}}
+\index{shoot@{shoot}!Array@{Array}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily bool Array\+::shoot (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Shoots at the given place 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & column number\\
+\hline
+{\em y} & row number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if ship has been hit
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Array.\+h\item 
+Array.\+cpp\end{DoxyCompactItemize}

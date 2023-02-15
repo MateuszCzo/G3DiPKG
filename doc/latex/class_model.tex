@@ -1,0 +1,101 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+Allows to display 3D objects loaded from files  
+
+
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_a647cff32e29e24f165b4346a97354cc8}{Model}} (const char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Loads in a model from a file and stores tha information in \textquotesingle{}data\textquotesingle{}, \textquotesingle{}JSON\textquotesingle{}, and \textquotesingle{}file\textquotesingle{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a4645104236c91f3858b0c5b502feb982}{draw}} (\mbox{\hyperlink{class_shader}{Shader}} \&shader, \mbox{\hyperlink{class_camera}{Camera}} \&camera)
+\begin{DoxyCompactList}\small\item\em Draws the object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a61a99350f6f5d2dd09ed7f48d775a0ad}{new\+Position}} (glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em Changing the object position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a790c4887839798ac2a4e912954a58705}{new\+Orientation}} (int degres, glm\+::vec3 a)
+\begin{DoxyCompactList}\small\item\em Changing the object orientation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows to display 3D objects loaded from files 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_a647cff32e29e24f165b4346a97354cc8}\label{class_model_a647cff32e29e24f165b4346a97354cc8}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Loads in a model from a file and stores tha information in \textquotesingle{}data\textquotesingle{}, \textquotesingle{}JSON\textquotesingle{}, and \textquotesingle{}file\textquotesingle{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & file name\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_a4645104236c91f3858b0c5b502feb982}\label{class_model_a4645104236c91f3858b0c5b502feb982}} 
+\index{Model@{Model}!draw@{draw}}
+\index{draw@{draw}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Model\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader}{Shader}} \&}]{shader,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Draws the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & shader object\\
+\hline
+{\em camera} & camera object\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a790c4887839798ac2a4e912954a58705}\label{class_model_a790c4887839798ac2a4e912954a58705}} 
+\index{Model@{Model}!newOrientation@{newOrientation}}
+\index{newOrientation@{newOrientation}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{newOrientation()}{newOrientation()}}
+{\footnotesize\ttfamily void Model\+::new\+Orientation (\begin{DoxyParamCaption}\item[{int}]{degres,  }\item[{glm\+::vec3}]{a }\end{DoxyParamCaption})}
+
+
+
+Changing the object orientation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrdes} & the number of degrees we want to rotate the object\\
+\hline
+{\em a} & axes on which we want to rotate the object\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a61a99350f6f5d2dd09ed7f48d775a0ad}\label{class_model_a61a99350f6f5d2dd09ed7f48d775a0ad}} 
+\index{Model@{Model}!newPosition@{newPosition}}
+\index{newPosition@{newPosition}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{newPosition()}{newPosition()}}
+{\footnotesize\ttfamily void Model\+::new\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Changing the object position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & new position\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Model.\+h\item 
+Model.\+cpp\end{DoxyCompactItemize}

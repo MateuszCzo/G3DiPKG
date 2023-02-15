@@ -1,0 +1,71 @@
+\hypertarget{class_v_a_o}{}\doxysection{VAO Class Reference}
+\label{class_v_a_o}\index{VAO@{VAO}}
+
+
+Stores VBOs  
+
+
+
+
+{\ttfamily \#include $<$VAO.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_v_a_o_a3b2ec9574d0aa9e86e5288095f58097e}\label{class_v_a_o_a3b2ec9574d0aa9e86e5288095f58097e}} 
+{\bfseries VAO} ()
+\begin{DoxyCompactList}\small\item\em Constructor that generates a \mbox{\hyperlink{class_v_a_o}{VAO}} id \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_v_a_o_a8296aa070193193290c2eb42daf5ef09}{link\+Attrib}} (\mbox{\hyperlink{class_v_b_o}{VBO}} \&\mbox{\hyperlink{class_v_b_o}{VBO}}, GLuint layout, GLuint num\+Components, GLenum type, GLsizeiptr stride, void $\ast$offset)
+\begin{DoxyCompactList}\small\item\em Links a \mbox{\hyperlink{class_v_b_o}{VBO}} Attribute such as a position or color to the \mbox{\hyperlink{class_v_a_o}{VAO}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_v_a_o_a8bb39e6aaadaa0204b0ccf910cf9500a}\label{class_v_a_o_a8bb39e6aaadaa0204b0ccf910cf9500a}} 
+void {\bfseries bind} ()
+\begin{DoxyCompactList}\small\item\em Binds the \mbox{\hyperlink{class_v_a_o}{VAO}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_v_a_o_ae96e88a466b44d968315b5dc1f612946}\label{class_v_a_o_ae96e88a466b44d968315b5dc1f612946}} 
+void {\bfseries unbind} ()
+\begin{DoxyCompactList}\small\item\em Unbinds the \mbox{\hyperlink{class_v_a_o}{VAO}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_v_a_o_a377fa92f70051d353c411cfb0f274b84}\label{class_v_a_o_a377fa92f70051d353c411cfb0f274b84}} 
+void {\bfseries delete\+VAO} ()
+\begin{DoxyCompactList}\small\item\em Deletes the \mbox{\hyperlink{class_v_a_o}{VAO}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_v_a_o_a92126cbccdb64e6020a4ada210b3bd96}\label{class_v_a_o_a92126cbccdb64e6020a4ada210b3bd96}} 
+GLuint {\bfseries id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores VBOs 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_a_o_a8296aa070193193290c2eb42daf5ef09}\label{class_v_a_o_a8296aa070193193290c2eb42daf5ef09}} 
+\index{VAO@{VAO}!linkAttrib@{linkAttrib}}
+\index{linkAttrib@{linkAttrib}!VAO@{VAO}}
+\doxysubsubsection{\texorpdfstring{linkAttrib()}{linkAttrib()}}
+{\footnotesize\ttfamily void VAO\+::link\+Attrib (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_v_b_o}{VBO}} \&}]{VBO,  }\item[{GLuint}]{layout,  }\item[{GLuint}]{num\+Components,  }\item[{GLenum}]{type,  }\item[{GLsizeiptr}]{stride,  }\item[{void $\ast$}]{offset }\end{DoxyParamCaption})}
+
+
+
+Links a \mbox{\hyperlink{class_v_b_o}{VBO}} Attribute such as a position or color to the \mbox{\hyperlink{class_v_a_o}{VAO}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_v_b_o}{VBO}}} & \mbox{\hyperlink{class_v_b_o}{VBO}} object\\
+\hline
+{\em layout} & layout location in shader\\
+\hline
+{\em num\+Components} & number of values\\
+\hline
+{\em type} & type of values\\
+\hline
+{\em stride} & size of all values\\
+\hline
+{\em offset} & offset to the next values\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+VAO.\+h\item 
+VAO.\+cpp\end{DoxyCompactItemize}

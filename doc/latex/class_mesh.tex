@@ -1,0 +1,92 @@
+\hypertarget{class_mesh}{}\doxysection{Mesh Class Reference}
+\label{class_mesh}\index{Mesh@{Mesh}}
+
+
+Combines \mbox{\hyperlink{class_v_a_o}{VAO}}, \mbox{\hyperlink{class_v_b_o}{VBO}} and \mbox{\hyperlink{class_e_b_o}{EBO}} into one class  
+
+
+
+
+{\ttfamily \#include $<$Mesh.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mesh_a3a7b7bb4a172a517e86e197b267f324d}{Mesh}} (std\+::vector$<$ \mbox{\hyperlink{struct_vertex}{Vertex}} $>$ \&vertices, std\+::vector$<$ GLuint $>$ \&indices, std\+::vector$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&textures)
+\begin{DoxyCompactList}\small\item\em Initializes the mesh \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mesh_ad6d9c2e4c549cfe46d5d9b6da2c8e377}{draw}} (\mbox{\hyperlink{class_shader}{Shader}} \&shader, \mbox{\hyperlink{class_camera}{Camera}} \&camera, glm\+::mat4 matrix=glm\+::mat4(1.\+0f), glm\+::vec3 translation=glm\+::vec3(0.\+0f, 0.\+0f, 0.\+0f), glm\+::quat rotation=glm\+::quat(1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f), glm\+::vec3 scale=glm\+::vec3(1.\+0f, 1.\+0f, 1.\+0f))
+\begin{DoxyCompactList}\small\item\em Draws the mesh \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mesh_a6465a888c97232a39e12aad008c969c3}\label{class_mesh_a6465a888c97232a39e12aad008c969c3}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_vertex}{Vertex}} $>$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{class_mesh_a5e55b84c6c967608bcf23ed7d68e4215}\label{class_mesh_a5e55b84c6c967608bcf23ed7d68e4215}} 
+std\+::vector$<$ GLuint $>$ {\bfseries indices}
+\item 
+\mbox{\Hypertarget{class_mesh_abf1e672703bf4f8e104f3b076faaf958}\label{class_mesh_abf1e672703bf4f8e104f3b076faaf958}} 
+std\+::vector$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ {\bfseries textures}
+\item 
+\mbox{\Hypertarget{class_mesh_aaed97571c124f82a32f6f2ab1806b868}\label{class_mesh_aaed97571c124f82a32f6f2ab1806b868}} 
+\mbox{\hyperlink{class_v_a_o}{VAO}} {\bfseries vao}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Combines \mbox{\hyperlink{class_v_a_o}{VAO}}, \mbox{\hyperlink{class_v_b_o}{VBO}} and \mbox{\hyperlink{class_e_b_o}{EBO}} into one class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mesh_a3a7b7bb4a172a517e86e197b267f324d}\label{class_mesh_a3a7b7bb4a172a517e86e197b267f324d}} 
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_vertex}{Vertex}} $>$ \&}]{vertices,  }\item[{std\+::vector$<$ GLuint $>$ \&}]{indices,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{textures }\end{DoxyParamCaption})}
+
+
+
+Initializes the mesh 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & vertices of the object\\
+\hline
+{\em indices} & indices of the object\\
+\hline
+{\em textures} & textures of the object\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mesh_ad6d9c2e4c549cfe46d5d9b6da2c8e377}\label{class_mesh_ad6d9c2e4c549cfe46d5d9b6da2c8e377}} 
+\index{Mesh@{Mesh}!draw@{draw}}
+\index{draw@{draw}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Mesh\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader}{Shader}} \&}]{shader,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} \&}]{camera,  }\item[{glm\+::mat4}]{matrix = {\ttfamily glm\+:\+:mat4(1.0f)},  }\item[{glm\+::vec3}]{translation = {\ttfamily glm\+:\+:vec3(0.0f,~0.0f,~0.0f)},  }\item[{glm\+::quat}]{rotation = {\ttfamily glm\+:\+:quat(1.0f,~0.0f,~0.0f,~0.0f)},  }\item[{glm\+::vec3}]{scale = {\ttfamily glm\+:\+:vec3(1.0f,~1.0f,~1.0f)} }\end{DoxyParamCaption})}
+
+
+
+Draws the mesh 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & shader object\\
+\hline
+{\em camera} & camera object\\
+\hline
+{\em matrix} & matrix of the object\\
+\hline
+{\em translation} & position of the object\\
+\hline
+{\em rotation} & rotation of the object\\
+\hline
+{\em scale} & scale of the object\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Mesh.\+h\item 
+Mesh.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{class_texture}{}\doxysection{Texture Class Reference}
+\label{class_texture}\index{Texture@{Texture}}
+
+
+Class that handles textures  
+
+
+
+
+{\ttfamily \#include $<$Texture.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_afdbeb72c9d02c2d278b019b7b6320905}{Texture}} (const char $\ast$image, const char $\ast$tex\+Type, GLuint slot)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_texture}{Texture}} constructor assigns the texture to a texture unit, checks what type of color channels the texture has and generates mip\+Maps \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_af4a7f134c553ea9ecd4c5144f6bfeabb}{tex\+Unit}} (\mbox{\hyperlink{class_shader}{Shader}} \&shader, const char $\ast$uniform, GLuint unit)
+\begin{DoxyCompactList}\small\item\em Assigns a texture unit to a texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_texture_a3840dc7429982ffaddeafc8d62345b5d}\label{class_texture_a3840dc7429982ffaddeafc8d62345b5d}} 
+void {\bfseries bind} ()
+\begin{DoxyCompactList}\small\item\em Binds a texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_texture_a8480eed7ed703a937c3e6ab528f559bd}\label{class_texture_a8480eed7ed703a937c3e6ab528f559bd}} 
+void {\bfseries unbind} ()
+\begin{DoxyCompactList}\small\item\em Unbinds a texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_texture_aff88560164444c32cb625e54407f6b2e}\label{class_texture_aff88560164444c32cb625e54407f6b2e}} 
+void {\bfseries deleteT} ()
+\begin{DoxyCompactList}\small\item\em Deletes a texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_texture_af848138d72c1fc995ab414a71ab10d47}\label{class_texture_af848138d72c1fc995ab414a71ab10d47}} 
+GLuint {\bfseries id}
+\item 
+\mbox{\Hypertarget{class_texture_afe821b9329d4aa65d608408f96494985}\label{class_texture_afe821b9329d4aa65d608408f96494985}} 
+const char $\ast$ {\bfseries type}
+\item 
+\mbox{\Hypertarget{class_texture_a9041cdeccaf234cd3945ef88e1092ebf}\label{class_texture_a9041cdeccaf234cd3945ef88e1092ebf}} 
+GLuint {\bfseries unit}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that handles textures 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_texture_afdbeb72c9d02c2d278b019b7b6320905}\label{class_texture_afdbeb72c9d02c2d278b019b7b6320905}} 
+\index{Texture@{Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}}
+{\footnotesize\ttfamily Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{image,  }\item[{const char $\ast$}]{tex\+Type,  }\item[{GLuint}]{slot }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_texture}{Texture}} constructor assigns the texture to a texture unit, checks what type of color channels the texture has and generates mip\+Maps 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & file path\\
+\hline
+{\em tex\+Type} & type of the texture diffuse or specular\\
+\hline
+{\em slot} & slot of the texture\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_texture_af4a7f134c553ea9ecd4c5144f6bfeabb}\label{class_texture_af4a7f134c553ea9ecd4c5144f6bfeabb}} 
+\index{Texture@{Texture}!texUnit@{texUnit}}
+\index{texUnit@{texUnit}!Texture@{Texture}}
+\doxysubsubsection{\texorpdfstring{texUnit()}{texUnit()}}
+{\footnotesize\ttfamily void Texture\+::tex\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader}{Shader}} \&}]{shader,  }\item[{const char $\ast$}]{uniform,  }\item[{GLuint}]{unit }\end{DoxyParamCaption})}
+
+
+
+Assigns a texture unit to a texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & shader object\\
+\hline
+{\em uniform} & uniform name\\
+\hline
+{\em unit} & value of the uniform\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Texture.\+h\item 
+Texture.\+cpp\end{DoxyCompactItemize}

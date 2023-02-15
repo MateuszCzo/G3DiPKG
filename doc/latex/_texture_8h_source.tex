@@ -1,0 +1,31 @@
+\hypertarget{_texture_8h_source}{}\doxysection{Texture.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TEXTURE\_CLASS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TEXTURE\_CLASS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<glad/glad.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<stb/stb\_image.h>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include"{}Shader.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_texture}{Texture}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     GLuint id;}
+\DoxyCodeLine{16     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* type;}
+\DoxyCodeLine{17     GLuint unit;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{25     \mbox{\hyperlink{class_texture_afdbeb72c9d02c2d278b019b7b6320905}{Texture}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* image, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* texType, GLuint slot);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_texture_af4a7f134c553ea9ecd4c5144f6bfeabb}{texUnit}}(\mbox{\hyperlink{class_shader}{Shader}}\& shader, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* uniform, GLuint unit);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_texture_a3840dc7429982ffaddeafc8d62345b5d}{bind}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_texture_a8480eed7ed703a937c3e6ab528f559bd}{unbind}}();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_texture_aff88560164444c32cb625e54407f6b2e}{deleteT}}();}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
